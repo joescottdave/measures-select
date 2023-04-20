@@ -747,7 +747,7 @@ const MEASURES_GROUNDWATER: Measures = [
   }
 ]
 
-const MEASURE_WATER_QUALITY = [
+const MEASURES_WATER_QUALITY: Measures = [
   {
     '@id':
       'http://environment.data.gov.uk/hydrology/id/measures/E03234A-turb-i-subdaily-ntu',
@@ -1247,19 +1247,18 @@ const MEASURE_WATER_QUALITY = [
 
 describe('MeasuresSelect', () => {
   test('default', () => {
-    expect(new MeasuresSelect(MEASURES_FLOW_AND_LEVEL).default()['@id']).toBe(
+    expect(MeasuresSelect.default(MEASURES_FLOW_AND_LEVEL)?.['@id']).toBe(
       'http://environment.data.gov.uk/hydrology/id/measures/052d0819-2a32-47df-9b99-c243c9c8235b-flow-m-86400-m3s-qualified'
     )
-    expect(new MeasuresSelect(MEASURES_LEVEL_ONLY).default()['@id']).toBe(
+    expect(MeasuresSelect.default(MEASURES_LEVEL_ONLY)?.['@id']).toBe(
       'http://environment.data.gov.uk/hydrology/id/measures/18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-i-900-m-qualified'
     )
-    expect(new MeasuresSelect(MEASURES_RAINFALL).default()['@id']).toBe(
+    expect(MeasuresSelect.default(MEASURES_RAINFALL)?.['@id']).toBe(
       'http://environment.data.gov.uk/hydrology/id/measures/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359-rainfall-t-86400-mm-qualified'
     )
-    expect(new MeasuresSelect(MEASURES_GROUNDWATER).default()['@id']).toBe(
+    expect(MeasuresSelect.default(MEASURES_GROUNDWATER)?.['@id']).toBe(
       'http://environment.data.gov.uk/hydrology/id/measures/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020-gw-logged-i-subdaily-mAOD-qualified'
     )
-    expect(new MeasuresSelect(MEASURE_WATER_QUALITY).default()['@id']).toBe(      'http://environment.data.gov.uk/hydrology/id/measures/E03234A-do-i-subdaily-mgL',
-    )
+    expect(MeasuresSelect.default(MEASURES_WATER_QUALITY)?.['@id']).toBe('http://environment.data.gov.uk/hydrology/id/measures/E03234A-do-i-subdaily-mgL')
   })
 })

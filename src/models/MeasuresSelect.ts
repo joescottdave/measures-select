@@ -26,28 +26,28 @@ export default class MeasuresSelect {
       .byPeriod(options.period)
   }
 
-  constructor (measures: Measures) {
-    this.measures = measures
-  }
-
-  default () {
+  static default (measures: Measures) {
     let result
 
-    if (MeasuresSelect.from(this.measures, { qualifier: 'Groundwater Logged' }).first() !== undefined) {
-      result = MeasuresSelect.from(this.measures, { qualifier: 'Groundwater Logged' }).first()
-    } else if (MeasuresSelect.from(this.measures, { qualifier: 'Groundwater Dipped' }).first() !== undefined) {
-      result = MeasuresSelect.from(this.measures, { qualifier: 'Groundwater Dipped' }).first()
-    } else if (MeasuresSelect.from(this.measures, { parameter: 'DISSOLVED OXYGEN' }).first() !== undefined) {
-      result = MeasuresSelect.from(this.measures, { parameter: 'DISSOLVED OXYGEN' }).first()
-    } else if (MeasuresSelect.from(this.measures, { parameter: 'rainfall', period: 86400 }).first() !== undefined) {
-      result = MeasuresSelect.from(this.measures, { parameter: 'rainfall', period: 86400 }).first()
-    } else if (MeasuresSelect.from(this.measures, { parameter: 'flow' }).first() !== undefined) {
-      result = MeasuresSelect.from(this.measures, { parameter: 'flow', valueType: 'mean' }).first()
-    } else if (MeasuresSelect.from(this.measures, { parameter: 'level' }).first() !== undefined) {
-      result = MeasuresSelect.from(this.measures, { parameter: 'level', valueType: 'instantaneous' }).first()
+    if (MeasuresSelect.from(measures, { qualifier: 'Groundwater Logged' }).first() !== undefined) {
+      result = MeasuresSelect.from(measures, { qualifier: 'Groundwater Logged' }).first()
+    } else if (MeasuresSelect.from(measures, { qualifier: 'Groundwater Dipped' }).first() !== undefined) {
+      result = MeasuresSelect.from(measures, { qualifier: 'Groundwater Dipped' }).first()
+    } else if (MeasuresSelect.from(measures, { parameter: 'DISSOLVED OXYGEN' }).first() !== undefined) {
+      result = MeasuresSelect.from(measures, { parameter: 'DISSOLVED OXYGEN' }).first()
+    } else if (MeasuresSelect.from(measures, { parameter: 'rainfall', period: 86400 }).first() !== undefined) {
+      result = MeasuresSelect.from(measures, { parameter: 'rainfall', period: 86400 }).first()
+    } else if (MeasuresSelect.from(measures, { parameter: 'flow' }).first() !== undefined) {
+      result = MeasuresSelect.from(measures, { parameter: 'flow', valueType: 'mean' }).first()
+    } else if (MeasuresSelect.from(measures, { parameter: 'level' }).first() !== undefined) {
+      result = MeasuresSelect.from(measures, { parameter: 'level', valueType: 'instantaneous' }).first()
     }
 
     return result
+  }
+
+  constructor (measures: Measures) {
+    this.measures = measures
   }
 
   first() {
