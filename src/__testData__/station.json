@@ -1,0 +1,235 @@
+{
+  "@id": "http://environment.data.gov.uk/hydrology/id/stations/18142c4b-ecf0-497c-ac4b-ccaef45aefc1",
+  "wiskiID": "530194_FW",
+  "type": [
+    {
+      "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Station"
+    },
+    {
+      "@id": "http://environment.data.gov.uk/reference/def/core/SamplingLocation"
+    }
+  ],
+  "searchText": "Brislington Brislington Brook 530194_FW",
+  "rloiStationLink": {
+    "@id": "https://check-for-flooding.service.gov.uk/station/3032"
+  },
+  "measures": [
+    {
+      "@id": "http://environment.data.gov.uk/hydrology/id/measures/18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-i-900-m-qualified",
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterLevel"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+        }
+      ],
+      "valueStatistic": {
+        "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+        "label": "instantaneous",
+        "comment": "Measurements which just represent the value at the instance they are taken.",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "timeseriesID": "841E52FE-0308-4FFB-9A53-2960BF075CA9",
+      "period": 900,
+      "observedProperty": {
+        "@id": "http://environment.data.gov.uk/reference/def/op/waterLevel",
+        "label": "Water level",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "unit": {
+        "@id": "http://qudt.org/1.1/vocab/unit#Meter"
+      },
+      "label": "15min Level (m) time series for Brislington",
+      "unitName": "m",
+      "parameter": "level",
+      "notation": "18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-i-900-m-qualified",
+      "station": {
+        "@id": "http://environment.data.gov.uk/hydrology/id/stations/18142c4b-ecf0-497c-ac4b-ccaef45aefc1"
+      },
+      "periodName": "15min",
+      "inDataset": {
+        "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+      },
+      "observationType": {
+        "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+        "label": "Qualified",
+        "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "parameterName": "Level",
+      "valueType": "instantaneous"
+    },
+    {
+      "@id": "http://environment.data.gov.uk/hydrology/id/measures/18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-max-86400-m-qualified",
+      "parameter": "level",
+      "period": 86400,
+      "observedProperty": {
+        "@id": "http://environment.data.gov.uk/reference/def/op/waterLevel",
+        "label": "Water level",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterLevel"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+        }
+      ],
+      "observationType": {
+        "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+        "label": "Qualified",
+        "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "unit": {
+        "@id": "http://qudt.org/1.1/vocab/unit#Meter"
+      },
+      "unitName": "m",
+      "valueStatistic": {
+        "@id": "http://environment.data.gov.uk/reference/def/core/maximum",
+        "label": "maximum",
+        "comment": "Measurements which represent the maximum over the measurement period.",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "valueType": "max",
+      "label": "Daily max Level (m) time series for Brislington",
+      "notation": "18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-max-86400-m-qualified",
+      "periodName": "daily",
+      "parameterName": "Level",
+      "inDataset": {
+        "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+      },
+      "station": {
+        "@id": "http://environment.data.gov.uk/hydrology/id/stations/18142c4b-ecf0-497c-ac4b-ccaef45aefc1"
+      }
+    },
+    {
+      "@id": "http://environment.data.gov.uk/hydrology/id/measures/18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-min-86400-m-qualified",
+      "unitName": "m",
+      "observedProperty": {
+        "@id": "http://environment.data.gov.uk/reference/def/op/waterLevel",
+        "label": "Water level",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "period": 86400,
+      "valueStatistic": {
+        "@id": "http://environment.data.gov.uk/reference/def/core/minimum",
+        "label": "minimum",
+        "comment": "Measurements which represent the minimum over the measurement period.",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterLevel"
+        }
+      ],
+      "parameterName": "Level",
+      "observationType": {
+        "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+        "label": "Qualified",
+        "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "unit": {
+        "@id": "http://qudt.org/1.1/vocab/unit#Meter"
+      },
+      "label": "Daily min Level (m) time series for Brislington",
+      "valueType": "min",
+      "station": {
+        "@id": "http://environment.data.gov.uk/hydrology/id/stations/18142c4b-ecf0-497c-ac4b-ccaef45aefc1"
+      },
+      "parameter": "level",
+      "inDataset": {
+        "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+      },
+      "notation": "18142c4b-ecf0-497c-ac4b-ccaef45aefc1-level-min-86400-m-qualified",
+      "periodName": "daily"
+    }
+  ],
+  "lat": 51.431108,
+  "riverName": "Brislington Brook",
+  "gridReference": "ST6161270380",
+  "stationGuid": "18142c4b-ecf0-497c-ac4b-ccaef45aefc1",
+  "inSet": {
+    "@id": "http://environment.data.gov.uk/reference/set/HydroMonitoringStation"
+  },
+  "long": -2.553576,
+  "notation": "18142c4b-ecf0-497c-ac4b-ccaef45aefc1",
+  "RLOIid": "3032",
+  "observedProperty": {
+    "@id": "http://environment.data.gov.uk/reference/def/op/waterLevel",
+    "label": "Water level",
+    "type": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  "northing": 170380,
+  "easting": 361612,
+  "dateOpened": "2005-07-01",
+  "status": {
+    "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive",
+    "inScheme": {
+      "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/StatusScheme"
+    },
+    "label": "Active",
+    "comment": "Indicates that a station is active. All is functioning as expected with the station and data is being provided on the GOV.UK service",
+    "type": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  "label": "Brislington"
+}

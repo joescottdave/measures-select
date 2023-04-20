@@ -1,0 +1,594 @@
+{
+  "meta": {
+    "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A.json",
+    "publisher": "Environment Agency",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "licenseName": "OGL 3",
+    "comment": "Hydrology API for sub-daily data",
+    "version": "2.0.0",
+    "hasFormat": [
+      "http://environment.data.gov.uk/hydrology/id/stations/E03234A.csv",
+      "http://environment.data.gov.uk/hydrology/id/stations/E03234A.geojson",
+      "http://environment.data.gov.uk/hydrology/id/stations/E03234A.ttl",
+      "http://environment.data.gov.uk/hydrology/id/stations/E03234A.rdf",
+      "http://environment.data.gov.uk/hydrology/id/stations/E03234A.html",
+      "http://environment.data.gov.uk/hydrology/id/stations/E03234A.json"
+    ]
+  },
+  "items": [
+    {
+      "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A",
+      "measures": [
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-turb-i-subdaily-ntu",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            }
+          ],
+          "parameterName": "Turbidity",
+          "label": "Sub-daily Turbidity (NTU) time series for BADSEY BROOK DS SILT REMOVAL",
+          "periodName": "sub-daily",
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "period": 900,
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "unitName": "NTU",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/turbidity",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "Turbidity",
+            "comment": "Turbidity or haziness of water, measured in Nephelometric Turbidity Units (NTU)",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueType": "instantaneous",
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          },
+          "parameter": "TURBIDITY",
+          "unit": {
+            "@id": "http://environment.data.gov.uk/reference/def/opunit/NTU",
+            "label": "NTU",
+            "comment": "Nephelometric Turbidity Unit",
+            "type": [
+              {
+                "@id": "http://qudt.org/schema/qudt/Unit"
+              }
+            ]
+          },
+          "notation": "E03234A-turb-i-subdaily-ntu",
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          }
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-amm-i-subdaily-mgL",
+          "unitName": "mg/L",
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "label": "Sub-daily Ammonium (mg/L) time series for BADSEY BROOK DS SILT REMOVAL",
+          "notation": "E03234A-amm-i-subdaily-mgL",
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/ammonium",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "Ammonium",
+            "comment": "Concentration of ammonium in water",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "parameterName": "Ammonium",
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          },
+          "period": 900,
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            }
+          ],
+          "valueType": "instantaneous",
+          "unit": {
+            "@id": "http://qudt.org/vocab/unit/MilliGM-PER-L"
+          },
+          "periodName": "sub-daily",
+          "parameter": "AMMONIUM"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-temp-i-subdaily-C",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            }
+          ],
+          "label": "Sub-daily Temperature (oC) time series for BADSEY BROOK DS SILT REMOVAL",
+          "parameterName": "Temperature",
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "parameter": "TEMPERATURE",
+          "periodName": "sub-daily",
+          "notation": "E03234A-temp-i-subdaily-C",
+          "period": 900,
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/temperature",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "Temperature",
+            "comment": "Water temperature",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          },
+          "valueType": "instantaneous",
+          "unitName": "oC",
+          "unit": {
+            "@id": "http://qudt.org/vocab/unit/DEG_C"
+          },
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          }
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-do-i-subdaily-mgL",
+          "periodName": "sub-daily",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/dissolved-oxygen",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "Dissolved Oxygen",
+            "comment": "Concentration of dissolved oxygen in water, may have been measured chemically or optically",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          },
+          "parameter": "DISSOLVED OXYGEN",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            }
+          ],
+          "label": "Sub-daily Dissolved Oxygen (mg/L) time series for BADSEY BROOK DS SILT REMOVAL",
+          "unit": {
+            "@id": "http://qudt.org/vocab/unit/MilliGM-PER-L"
+          },
+          "period": 900,
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueType": "instantaneous",
+          "parameterName": "Dissolved Oxygen",
+          "notation": "E03234A-do-i-subdaily-mgL",
+          "unitName": "mg/L"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-ph-i-subdaily",
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            }
+          ],
+          "notation": "E03234A-ph-i-subdaily",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/ph",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "PH",
+            "comment": "PH of water",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "parameterName": "PH",
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "periodName": "sub-daily",
+          "parameter": "PH",
+          "period": 900,
+          "valueType": "instantaneous",
+          "label": "Sub-daily PH time series for BADSEY BROOK DS SILT REMOVAL",
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          }
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-do-i-subdaily-pct",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            }
+          ],
+          "period": 900,
+          "notation": "E03234A-do-i-subdaily-pct",
+          "parameterName": "Dissolved Oxygen",
+          "parameter": "DISSOLVED OXYGEN",
+          "valueType": "instantaneous",
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          },
+          "periodName": "sub-daily",
+          "unitName": "%",
+          "label": "Sub-daily Dissolved Oxygen (%) time series for BADSEY BROOK DS SILT REMOVAL",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/dissolved-oxygen",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "Dissolved Oxygen",
+            "comment": "Concentration of dissolved oxygen in water, may have been measured chemically or optically",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "unit": {
+            "@id": "http://qudt.org/vocab/unit/PERCENT"
+          },
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          }
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/E03234A-cond-i-subdaily-uS",
+          "unit": {
+            "@id": "http://qudt.org/vocab/unit/MicroS-PER-CentiM"
+          },
+          "parameter": "CONDUCTIVITY",
+          "periodName": "sub-daily",
+          "notation": "E03234A-cond-i-subdaily-uS",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/conductivity",
+            "broader": {
+              "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+            },
+            "label": "Conductivity",
+            "comment": "Conductivity of water",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "period": 900,
+          "parameterName": "Conductivity",
+          "valueType": "instantaneous",
+          "unitName": "µS/cm",
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/E03234A"
+          },
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "label": "Sub-daily Conductivity (µS/cm) time series for BADSEY BROOK DS SILT REMOVAL",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQuality"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            }
+          ],
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Measured",
+            "label": "Measured",
+            "comment": "Indicates that the values in a series or dataset are directly measured through some observational process.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          }
+        }
+      ],
+      "observedProperty": [
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/op/ammonium",
+          "broader": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+          },
+          "label": "Ammonium",
+          "comment": "Concentration of ammonium in water",
+          "type": [
+            {
+              "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ]
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/op/turbidity",
+          "broader": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+          },
+          "label": "Turbidity",
+          "comment": "Turbidity or haziness of water, measured in Nephelometric Turbidity Units (NTU)",
+          "type": [
+            {
+              "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ]
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/op/dissolved-oxygen",
+          "broader": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+          },
+          "label": "Dissolved Oxygen",
+          "comment": "Concentration of dissolved oxygen in water, may have been measured chemically or optically",
+          "type": [
+            {
+              "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ]
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/op/conductivity",
+          "broader": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+          },
+          "label": "Conductivity",
+          "comment": "Conductivity of water",
+          "type": [
+            {
+              "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ]
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/op/ph",
+          "broader": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+          },
+          "label": "PH",
+          "comment": "PH of water",
+          "type": [
+            {
+              "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ]
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/op/temperature",
+          "broader": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/waterQuality"
+          },
+          "label": "Temperature",
+          "comment": "Water temperature",
+          "type": [
+            {
+              "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+            }
+          ]
+        }
+      ],
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Station"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/WaterQualityStation"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/core/SamplingLocation"
+        }
+      ],
+      "searchText": "BADSEY BROOK DS SILT REMOVAL E03234A BADSEY BROOK",
+      "long": -1.869201,
+      "northing": 237441,
+      "easting": 409069,
+      "label": "BADSEY BROOK DS SILT REMOVAL",
+      "notation": "E03234A",
+      "status": {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/statusClosed",
+        "inScheme": {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/StatusScheme"
+        },
+        "label": "Closed",
+        "comment": "Indicates that a station is closed. There are permanent issues with the station and data is not being provided on the GOV.UK service.  ",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "riverName": "BADSEY BROOK",
+      "lat": 52.035295,
+      "inSet": {
+        "@id": "http://environment.data.gov.uk/reference/set/HydroMonitoringStation"
+      },
+      "dateOpened": "2018-02-28",
+      "gridReference": "SP0906937441",
+      "dateClosed": "2018-07-02"
+    }
+  ]
+}

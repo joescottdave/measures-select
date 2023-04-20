@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "@id": "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.json",
+    "publisher": "Environment Agency",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "licenseName": "OGL 3",
+    "comment": "Hydrology API for sub-daily data",
+    "version": "2.0.0",
+    "hasFormat": [
+      "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.json",
+      "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.ttl",
+      "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.csv",
+      "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.rdf",
+      "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.geojson",
+      "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020.html"
+    ]
+  },
+  "items": [
+    {
+      "@id": "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020",
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Station"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/core/SamplingLocation"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Groundwater"
+        }
+      ],
+      "gridReference": "SK98962513",
+      "dateOpened": "1974-07-30",
+      "stationGuid": "c7e13884-4a02-4df3-b184-09aea28cf8e8",
+      "lat": 52.814674,
+      "status": {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive",
+        "inScheme": {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/StatusScheme"
+        },
+        "label": "Active",
+        "comment": "Indicates that a station is active. All is functioning as expected with the station and data is being provided on the GOV.UK service",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "easting": 498965,
+      "boreholeDepth": 31,
+      "colocatedStation": {
+        "@id": "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8"
+      },
+      "measures": [
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020-gw-dipped-i-mAOD-qualified",
+          "timeseriesID": "85d9d509-8df9-470e-8653-cc1e20bde6c8",
+          "unit": {
+            "@id": "http://qudt.org/1.1/vocab/unit#Meter"
+          },
+          "qualifier": "Groundwater Dipped",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/GroundwaterLevel"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            }
+          ],
+          "parameterName": "GroundwaterLevel",
+          "parameter": "level",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/groundwaterLevel",
+            "label": "Groundwater level",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "label": "Groundwater Dipped (mAOD) time series for Burton Coggles",
+          "notation": "c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020-gw-dipped-i-mAOD-qualified",
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020"
+          },
+          "unitName": "mAOD",
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+            "label": "Qualified",
+            "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueType": "instantaneous"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020-gw-logged-i-subdaily-mAOD-qualified",
+          "parameterName": "GroundwaterLevel",
+          "notation": "c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020-gw-logged-i-subdaily-mAOD-qualified",
+          "valueType": "instantaneous",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/GroundwaterLevel"
+            }
+          ],
+          "parameter": "level",
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/instantaneous",
+            "label": "instantaneous",
+            "comment": "Measurements which just represent the value at the instance they are taken.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "period": 900,
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+            "label": "Qualified",
+            "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "unitName": "mAOD",
+          "label": "Sub-daily Groundwater Logged (mAOD) time series for Burton Coggles",
+          "qualifier": "Groundwater Logged",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/groundwaterLevel",
+            "label": "Groundwater level",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "unit": {
+            "@id": "http://qudt.org/1.1/vocab/unit#Meter"
+          },
+          "periodName": "sub-daily",
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020"
+          },
+          "timeseriesID": "57665040-9748-45d3-94ab-792e2ea62b79",
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          }
+        }
+      ],
+      "searchText": "Burton Coggles 3_020",
+      "wiskiID": "3_020",
+      "inSet": {
+        "@id": "http://environment.data.gov.uk/reference/set/HydroMonitoringStation"
+      },
+      "northing": 325135,
+      "long": -0.533054,
+      "notation": "c7e13884-4a02-4df3-b184-09aea28cf8e8_3_020",
+      "datum": 0,
+      "aquifer": "Lincolnshire Limestone",
+      "label": "Burton Coggles",
+      "observedProperty": {
+        "@id": "http://environment.data.gov.uk/reference/def/op/groundwaterLevel",
+        "label": "Groundwater level",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      }
+    }
+  ]
+}

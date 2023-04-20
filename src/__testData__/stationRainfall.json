@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "@id": "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.json",
+    "publisher": "Environment Agency",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "licenseName": "OGL 3",
+    "comment": "Hydrology API for sub-daily data",
+    "version": "2.0.0",
+    "hasFormat": [
+      "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.html",
+      "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.geojson",
+      "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.json",
+      "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.csv",
+      "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.rdf",
+      "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359.ttl"
+    ]
+  },
+  "items": [
+    {
+      "@id": "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359",
+      "measures": [
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359-rainfall-t-86400-mm-qualified",
+          "parameterName": "Rainfall",
+          "period": 86400,
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359"
+          },
+          "label": "Daily total Rainfall (mm) time series for Ulpha  Duddo",
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+            "label": "Qualified",
+            "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "unit": {
+            "@id": "http://qudt.org/1.1/vocab/unit#Millimeter"
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/total",
+            "label": "total",
+            "comment": "Measurements which represent an accumulated total over the measurement period.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "periodName": "daily",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/rainfall",
+            "label": "Rainfall amount",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "unitName": "mm",
+          "parameter": "rainfall",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Rainfall"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            }
+          ],
+          "valueType": "total",
+          "notation": "34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359-rainfall-t-86400-mm-qualified"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/hydrology/id/measures/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359-rainfall-t-900-mm-qualified",
+          "unit": {
+            "@id": "http://qudt.org/1.1/vocab/unit#Millimeter"
+          },
+          "periodName": "15min",
+          "timeseriesID": "2a119c39-6ade-4d72-b812-aea6b05de15c",
+          "type": [
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Rainfall"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/reference/def/core/TimeSeries"
+            },
+            {
+              "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Measure"
+            }
+          ],
+          "inDataset": {
+            "@id": "http://environment.data.gov.uk/reference/set/HydrologyDataset"
+          },
+          "observationType": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/Qualified",
+            "label": "Qualified",
+            "comment": "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "parameterName": "Rainfall",
+          "valueType": "total",
+          "label": "15min total Rainfall (mm) time series for Ulpha  Duddo",
+          "station": {
+            "@id": "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359"
+          },
+          "period": 900,
+          "unitName": "mm",
+          "parameter": "rainfall",
+          "observedProperty": {
+            "@id": "http://environment.data.gov.uk/reference/def/op/rainfall",
+            "label": "Rainfall amount",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "valueStatistic": {
+            "@id": "http://environment.data.gov.uk/reference/def/core/total",
+            "label": "total",
+            "comment": "Measurements which represent an accumulated total over the measurement period.",
+            "type": [
+              {
+                "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+              }
+            ]
+          },
+          "notation": "34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359-rainfall-t-900-mm-qualified"
+        }
+      ],
+      "label": "Ulpha  Duddo",
+      "searchText": "Ulpha  Duddo 589359",
+      "wiskiID": "589359",
+      "lat": 54.341652,
+      "inSet": {
+        "@id": "http://environment.data.gov.uk/reference/set/HydroMonitoringStation"
+      },
+      "long": -3.218087,
+      "gridReference": "SD2090794697",
+      "notation": "34f4e53b-4616-4aaa-b8ad-170c22c808c4_589359",
+      "status": {
+        "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/statusActive",
+        "inScheme": {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/StatusScheme"
+        },
+        "label": "Active",
+        "comment": "Indicates that a station is active. All is functioning as expected with the station and data is being provided on the GOV.UK service",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "colocatedStation": {
+        "@id": "http://environment.data.gov.uk/hydrology/id/stations/34f4e53b-4616-4aaa-b8ad-170c22c808c4"
+      },
+      "type": [
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/Station"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/reference/def/core/SamplingLocation"
+        },
+        {
+          "@id": "http://environment.data.gov.uk/flood-monitoring/def/core/RainfallStation"
+        }
+      ],
+      "dateOpened": "1990-10-04",
+      "observedProperty": {
+        "@id": "http://environment.data.gov.uk/reference/def/op/rainfall",
+        "label": "Rainfall amount",
+        "type": [
+          {
+            "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+          }
+        ]
+      },
+      "stationGuid": "34f4e53b-4616-4aaa-b8ad-170c22c808c4",
+      "easting": 320907,
+      "northing": 494697
+    }
+  ]
+}
