@@ -1,10 +1,4 @@
-export interface Measure {
-  '@id': string
-  parameter: 'level' | 'flow' | 'rainfall' | 'DISSOLVED OXYGEN'
-  period?: number
-  valueType: 'instantaneous' | 'mean' | 'max' | 'min'
-  qualifier?: 'Groundwater Logged' | 'Groundwater Dipped'
-}
+import { Measure } from "../types"
 
 export type Measures = Measure[]
 

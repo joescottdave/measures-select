@@ -1,0 +1,1 @@
+export type ValueType = 'instantaneous' | 'mean' | 'max' | 'min' | 'total'

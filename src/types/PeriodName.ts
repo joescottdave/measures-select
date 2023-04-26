@@ -1,0 +1,1 @@
+export type PeriodName = 'daily' | 'sub-daily'
