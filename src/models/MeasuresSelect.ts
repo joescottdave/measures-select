@@ -11,6 +11,14 @@ export interface MeasureOptions {
 
 export default class MeasuresSelect {
   private readonly measures: Measures
+  private static readonly _DEFAULT_MEASURE_OPTIONS: MeasureOptions[] = [
+    { qualifier: 'Groundwater Logged' },
+    { qualifier: 'Groundwater Dipped' },
+    { parameter: 'DISSOLVED OXYGEN' },
+    { parameter: 'rainfall', period: 84600 },
+    { parameter: 'flow', valueType: 'mean' },
+    { parameter: 'level', valueType: 'instantaneous' }
+  ]
 
   static from (measures: Measures, options: MeasureOptions = {}) {
     return new MeasuresSelect(measures)
@@ -21,20 +29,12 @@ export default class MeasuresSelect {
   }
 
   static default (measures: Measures) {
-    let result
+    let result: Measure | undefined
 
-    if (MeasuresSelect.from(measures, { qualifier: 'Groundwater Logged' }).first() !== undefined) {
-      result = MeasuresSelect.from(measures, { qualifier: 'Groundwater Logged' }).first()
-    } else if (MeasuresSelect.from(measures, { qualifier: 'Groundwater Dipped' }).first() !== undefined) {
-      result = MeasuresSelect.from(measures, { qualifier: 'Groundwater Dipped' }).first()
-    } else if (MeasuresSelect.from(measures, { parameter: 'DISSOLVED OXYGEN' }).first() !== undefined) {
-      result = MeasuresSelect.from(measures, { parameter: 'DISSOLVED OXYGEN' }).first()
-    } else if (MeasuresSelect.from(measures, { parameter: 'rainfall', period: 86400 }).first() !== undefined) {
-      result = MeasuresSelect.from(measures, { parameter: 'rainfall', period: 86400 }).first()
-    } else if (MeasuresSelect.from(measures, { parameter: 'flow' }).first() !== undefined) {
-      result = MeasuresSelect.from(measures, { parameter: 'flow', valueType: 'mean' }).first()
-    } else if (MeasuresSelect.from(measures, { parameter: 'level' }).first() !== undefined) {
-      result = MeasuresSelect.from(measures, { parameter: 'level', valueType: 'instantaneous' }).first()
+    for (const options of this._DEFAULT_MEASURE_OPTIONS) {
+      if (MeasuresSelect.from(measures, options).first() != null) {
+        result = MeasuresSelect.from(measures, options).first()
+      }
     }
 
     return result
@@ -46,6 +46,10 @@ export default class MeasuresSelect {
 
   first() {
     return this.measures[0]
+  }
+
+  all() {
+    return this.measures
   }
 
   byPeriod(period: Measure['period'] | undefined) {
