@@ -10,12 +10,13 @@ export interface MeasureOptions {
 }
 
 export default class MeasuresSelect {
-  private readonly measures: Measures
+  private readonly _measures: Measures
+
   private static readonly _DEFAULT_MEASURE_OPTIONS: MeasureOptions[] = [
     { qualifier: 'Groundwater Logged' },
     { qualifier: 'Groundwater Dipped' },
     { parameter: 'DISSOLVED OXYGEN' },
-    { parameter: 'rainfall', period: 84600 },
+    { parameter: 'rainfall', period: 86400 },
     { parameter: 'flow', valueType: 'mean' },
     { parameter: 'level', valueType: 'instantaneous' }
   ]
@@ -37,42 +38,46 @@ export default class MeasuresSelect {
       }
     }
 
-    return result
+    if (result != null) {
+      return result
+    } else {
+      throw new Error('No default measure')
+    }
   }
 
   constructor (measures: Measures) {
-    this.measures = measures
+    this._measures = measures
   }
 
-  first() {
-    return this.measures[0]
+  first(): Measure | undefined {
+    return this._measures[0]
   }
 
   all() {
-    return this.measures
+    return this._measures
   }
 
   byPeriod(period: Measure['period'] | undefined) {
     return period === undefined
       ? this
-      : new MeasuresSelect(this.measures.filter(measure => measure.period === period))
+      : new MeasuresSelect(this._measures.filter(measure => measure.period === period))
   }
 
   byValueType(valueType: Measure['valueType'] | undefined) {
     return valueType === undefined
       ? this
-      : new MeasuresSelect(this.measures.filter(measure => measure.valueType === valueType))
+      : new MeasuresSelect(this._measures.filter(measure => measure.valueType === valueType))
   }
 
   byParameter (parameter: Measure['parameter'] | undefined) {
     return parameter === undefined
       ? this
-      : new MeasuresSelect(this.measures.filter(measure => measure.parameter === parameter))
+      : new MeasuresSelect(this._measures.filter(measure => measure.parameter === parameter))
   }
 
   byQualifier (qualifier: Measure['qualifier'] | undefined) {
     return qualifier === undefined
       ? this
-      : new MeasuresSelect(this.measures.filter(measure => measure.qualifier === qualifier))
+      : new MeasuresSelect(this._measures.filter(measure => measure.qualifier === qualifier))
   }
 }
