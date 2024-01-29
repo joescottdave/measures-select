@@ -13,12 +13,12 @@ export default class MeasuresSelect {
   private readonly _measures: Measures;
 
   private static readonly _DEFAULT_MEASURE_OPTIONS: MeasureOptions[] = [
-    { qualifier: "Groundwater Logged" },
-    { qualifier: "Groundwater Dipped" },
-    { parameter: "DISSOLVED OXYGEN" },
-    { parameter: "rainfall", period: 86400 },
-    { parameter: "flow", valueType: "mean" },
-    { parameter: "level", valueType: "instantaneous" },
+    { qualifier: "Groundwater Logged" }, // if Groundwater, prefer logged
+    { qualifier: "Groundwater Dipped" }, // else dipped
+    { parameter: "DISSOLVED OXYGEN" }, // if Water Quality return dissolved oxygen
+    { parameter: "rainfall", period: 86400 }, // if rainfall return daily
+    { parameter: "flow", valueType: "mean" }, // if flow or flow & level return the daily mean
+    { parameter: "level", valueType: "instantaneous" }, // else if level only return instantaneous
   ];
 
   static from(measures: Measures, options: MeasureOptions = {}) {
